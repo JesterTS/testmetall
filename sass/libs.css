@@ -1,0 +1,38 @@
+/*
+Error: Invalid @import: expected file to import, was ""
+        on line 1 of libs.sass
+
+1: @import "../libs/magnific-popup/dist/magnific-popup.css",
+2: ".."
+
+Backtrace:
+libs.sass:1
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:1025:in `block in parse_import_directive'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:1023:in `loop'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:1023:in `parse_import_directive'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:838:in `parse_directive'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:655:in `parse_line'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:540:in `build_tree'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:559:in `block in append_children'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:558:in `each'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:558:in `append_children'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:417:in `_to_tree'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+E:/Program Files (x86)/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+E:/Program Files (x86)/Ruby23-x64/bin/sass:22:in `load'
+E:/Program Files (x86)/Ruby23-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid @import: expected file to import, was \"\"\A         on line 1 of libs.sass\A \A 1: @import \"../libs/magnific-popup/dist/magnific-popup.css\",\A 2: \"..\""; }

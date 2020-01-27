@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="modalSucsess">
+    <div class="contentSucsess">
+			<span class="close-btn" onclick="closeModalFeed();">
+				<img alt="" src="img/close.png" />
+			</span>
+        <img alt="" class="imgSucsess" src="img/sucsess.png" />
+        <h3>
+            <span>Ваша заявка</span>
+            <br /> Успешно принята</h3>
+
+        <p>Наш менеджер свяжется с вами
+            <br /> в ближайшее время</p>
+    </div>
+</div>
+
+<header>
+    <div class="container-fluid header_menu_wrapper">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-1 d-lg-none">
+                    <div class="burger_button">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-11">
+                    <nav class="nav_menu">
+                        <ul>
+                            <li><a href="#">О Компании</a></li>
+                            /
+                            <li><a href="#">Услуги <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            /
+                            <li><a href="#">Преимущества</a></li>
+                            /
+                            <li><a href="#">Статьи</a></li>
+                            /
+                            <li><a href="#">Новости</a></li>
+                            /
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <button class="header_callback" data-remodal-target="callback_modal">
+                        Обратный звонок
+                    </button>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <ul class="header_social">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid header_info_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="header_logo_wrapper">
+                        <div class="header_logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+
+                        <div class="header_slash"></div>
+
+                        <h1 class="header_logo_text">
+                            Производство <br>
+                            металлоконструкций <br>
+                            и садового инструмента
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-10 ">
+
+                    <div class="header_info_blocks">
+
+                        <div class="header_phones">
+
+                            <div class="phone_numbers">
+
+                                <div class="number">
+                                    <div class="phones_logo">
+                                        <img src="img/phone.png" alt="">
+                                    </div>
+                                    <a href="tel:+7 (495) 796-44-22" class="header_number">
+                                        +7 (495) 796-44-22
+                                    </a>
+                                </div>
+
+
+                                <div class="number">
+                                    <div class="phones_logo">
+                                        <img src="img/viber.png" alt="">
+                                        <img src="img/whatsapp.png" alt="">
+                                    </div>
+                                    <a href="tel:+7 (495) 796-44-22" class="header_number">
+                                        +7 (495) 796-44-22
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="header_contacts">
+                            <div class="header_time">
+                                <img src="img/clock.png" alt="">
+                                пн-сб 10:00-18:00
+                            </div>
+
+                            <div class="header_mail">
+                                <img src="img/mail.png" alt="">
+                                akks-metal@yandex.ru
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-2 ">
+                    <div class="header_cart_wrapper">
+                        <div class="header_cart_icon">
+                            <img src="img/shopping_cart.png" alt="">
+                            <div class="cart_count">
+                                0
+                            </div>
+                        </div>
+
+                        <div class="header_cart_text">
+                            <div class="cart_title">
+                                Корзина:
+                            </div>
+                            <div class="cart_sum">
+                                0 руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid main_menu_wrapper d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-9 order-2 order-lg-1">
+                    <nav class="main_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Каталог
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <ul class="main_submenu">
+                                    <li>
+                                        <a href="all_services.html">Самовывоз</a>
+
+                                        <ul class="sub_sub_menu">
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Транспортными компаниями</a>
+                                        <ul class="sub_sub_menu">
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Курьерская доставка</a>
+
+                                        <ul class="sub_sub_menu">
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                            <li><a href="#">Lorem</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Доставка
+                                    <i class="fa fa-angle-right" aria-hidden="true"> </i>
+                                </a>
+                                <ul class="main_submenu">
+                                    <li><a href="#">Самовывоз</a></li>
+                                    <li><a href="#">Транспортными компаниями</a></li>
+                                    <li><a href="#">Курьерская доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Оплата
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <ul class="main_submenu">
+                                    <li><a href="#">Самовывоз</a></li>
+                                    <li><a href="#">Транспортными компаниями</a></li>
+                                    <li><a href="#">Курьерская доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Где купить
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <ul class="main_submenu">
+                                    <li><a href="#">Самовывоз</a></li>
+                                    <li><a href="#">Транспортными компаниями</a></li>
+                                    <li><a href="#">Курьерская доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Акции
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                <ul class="main_submenu">
+                                    <li><a href="#">Самовывоз</a></li>
+                                    <li><a href="#">Транспортными компаниями</a></li>
+                                    <li><a href="#">Курьерская доставка</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-xl-3 order-1 order-lg-2">
+                    <div class="header_search">
+                        <form action="/">
+                            <input type="text" placeholder="Поиск" required>
+                            <button type="submit">
+                                <img src="img/search.png" alt="">
+                            </button>
+                        </form>
+
+
+                        <div class="burger_button_close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<section class="main_banner_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner_slider_wrapper">
+                    <div id="main_banner_slider">
+                        <div class="banner_slide">
+                            <div class="banner_content" style="background-image: url('img/banner1.png')">
+                                <div class="banner_title">
+                                    <h5>Металлоконструкции</h5>
+                                    <h1>Аксс Металл</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner_slide">
+                            <div class="banner_content" style="background-image: url('img/banner2.png')">
+                                <div class="banner_title">
+                                    <h5>Металлоконструкции2</h5>
+                                    <h1>Аксс Металл2</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner_slide">
+                            <div class="banner_content" style="background-image: url('img/banner1.png')">
+                                <div class="banner_title">
+                                    <h5>Металлоконструкции3</h5>
+                                    <h1>Аксс Металл3</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="banner_slider_pag">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="home_section company_mission">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    Миссия компании
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="section_title company_mission_title">
+                    Компания
+                    "Артель Аксс Металл"
+                </h1>
+
+                <p class="company_mission_text">
+                    Компания «Аксс Металл» в течение многих лет успешно работает на московском рынке металлоконструкций.
+                    Мы осуществляем все работы по изготовлению и производству металлических конструкций различной
+                    сложности, кровельных и лестничных ограждений из нержавеющей стали, изготовлению лестниц из стали и
+                    лестничных групп разных видов по индивидуальным проектам. Одним из основных направлений нашей
+                    деятельности является изготовление ограждений из стали, металлических перил и поручней для лестниц
+                    любых видов, а также предметы интерьера и экстерьера из металла. <br>
+                    <span class="hidden_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae doloribus ea excepturi
+                        explicabo harum ipsum magni necessitatibus nihil quas quo ratione, repellat soluta suscipit,
+                        voluptatibus? Autem dignissimos ducimus eaque fuga, fugiat inventore laborum natus
+                        necessitatibus perferendis quod similique vitae. Ad architecto est eveniet minima quam repellat
+                        saepe ullam ut.
+                    </span>
+                </p>
+
+                <button type="button" class="mission_text_more">
+                    Подробнее
+                </button>
+            </div>
+
+            <div class="col-md-6">
+                <div class="company_mission_image" style="background-image: url('img/mission.png')">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home_section we_offer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    Каталог продукции
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="we_offer_title_wrap section_title">
+                    <p>Мы предлагаем</p>
+                    <div>
+                        <a href="#" class="we_offer_catalog">Перейти в каталог</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/1.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Поручни, перила</h5>
+                        <p>Мы изготавливаем оригинальные поручни и перила по индивидуальным чертежам заказчика</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/2.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Лестницы</h5>
+                        <p>Мы предлагаем изготовление лестниц любой сложности. Маршевые, винтовые, лестницы на больцах и
+                            косоурах. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/3.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Мебель из металла</h5>
+                        <p>Популярность такого вида мебели объясняется многими факторами, один из которых – это
+                            способность выдержать</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/4.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Ограждения</h5>
+                        <p>Территория парка, дома, детской, спортивной площадки нуждается в красивых, практичных
+                            ограждениях</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/5.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Металлообработка </h5>
+                        <p>Наше предприятие оснащено современным оборудованием, позволяющим обрабатывать любые
+                            конструкции с </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/6.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Заборы, ворота, решетки</h5>
+                        <p>Настилочные решётки производят нержавеющей стали. Многофункциональность ячеистых решеток
+                            раскрывает </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="offer_block">
+                    <div class="offer_icon">
+                        <img src="img/icons/7.png" alt="">
+                    </div>
+                    <div class="offer_text">
+                        <h5>Ручной инструмент</h5>
+                        <p>Если Вы хотите купить ручной садовый бур для столбов забора, бур для свайного фундамента или
+                            скважины на воду</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="home_section our_advantages">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    Почему выбирают нас
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="section_title">
+                    Наши преимущества
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-3 advantage_block">
+                <div class="advantage_icon">
+                    <img src="img/advantages/1.png" alt="">
+                </div>
+                <div class="advantage_text">
+                    Прямые цены от завода производителя
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 advantage_block">
+                <div class="advantage_icon">
+                    <img src="img/advantages/2.png" alt="">
+                </div>
+                <div class="advantage_text">
+                    Только качественная
+                    продукция
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 advantage_block">
+                <div class="advantage_icon">
+                    <img src="img/advantages/3.png" alt="">
+                </div>
+                <div class="advantage_text">
+                    Мы лучшие. Опыт работы
+                    более 20 лет
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 advantage_block">
+                <div class="advantage_icon">
+                    <img src="img/advantages/4.png" alt="">
+                </div>
+                <div class="advantage_text">
+                    Гарантия на продукцию
+                    до 10 лет
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home_section order_steps">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    как мы работаем
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="section_title">
+                    Этапы выполнения заказа
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/1.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Проектирование
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Мы предлагаем изготовление лестниц любой сложности. Маршевые, винтовые, лестницы на больцах и
+                        косоурах.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/2.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Производство
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Особый подход к производству и контролю за
+                        его процессами, привел нас к лидерству в отрасли. Мы гордимся, что умеем производить!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/3.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Поставка
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Мы доставим вам оборудование прямо на объект любым удобным для вас способом и в максимально
+                        короткие сроки.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/4.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Монтаж
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Правильно выполненный монтаж – залог долговечной и безопасной эксплуатации грузоподъемного
+                        оборудования.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/5.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Оплата заказа
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Мы предлагаем изготовление лестниц любой сложности. Маршевые, винтовые, лестницы на больцах и
+                        косоурах.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="step_block">
+                    <div class="step_icon_and_title">
+                        <div class="step_icon">
+                            <img src="img/steps/6.png" alt="">
+                        </div>
+                        <div class="step_title">
+                            Гарантия и сервис
+                        </div>
+                    </div>
+
+                    <div class="step_text">
+                        Мы предлагаем изготовление лестниц любой сложности. Маршевые, винтовые, лестницы на больцах и
+                        косоурах.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home_section clients_reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    Что о нас говорят
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="section_title">
+                    Отзывы клиентов
+                </h1>
+            </div>
+
+            <div class="col-md-6">
+                <div id="reviews_arrows">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="reviews_slider">
+                    <div class="review_slide">
+                        <div class="review_image">
+                            <img src="img/review.png" alt="">
+                        </div>
+                        <div class="review_block">
+                            <div class="review_head">
+                                <div class="review_name_and_date">
+                                    <div class="review_name">
+                                        Елена Иванова
+                                    </div>
+                                    <div class="review_date">
+                                        12.11.2018
+                                    </div>
+                                </div>
+
+                                <div class="review_icon">"</div>
+                            </div>
+                            <div class="review_text">
+                                Мы с мужем решили сделать дизайнерский ремонт в квартире. Нас давно не устраивала
+                                лестница, ведущая на второй этаж...
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="review_slide">
+                        <div class="review_image">
+                            <img src="img/review.png" alt="">
+                        </div>
+                        <div class="review_block">
+                            <div class="review_head">
+                                <div class="review_name_and_date">
+                                    <div class="review_name">
+                                        Елена Иванова
+                                    </div>
+                                    <div class="review_date">
+                                        12.11.2018
+                                    </div>
+                                </div>
+
+                                <div class="review_icon">"</div>
+                            </div>
+                            <div class="review_text">
+                                Мы с мужем решили сделать дизайнерский ремонт в квартире. Нас давно не устраивала
+                                лестница, ведущая на второй этаж...
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="review_slide">
+                        <div class="review_image">
+                            <img src="img/review.png" alt="">
+                        </div>
+                        <div class="review_block">
+                            <div class="review_head">
+                                <div class="review_name_and_date">
+                                    <div class="review_name">
+                                        Елена Иванова
+                                    </div>
+                                    <div class="review_date">
+                                        12.11.2018
+                                    </div>
+                                </div>
+
+                                <div class="review_icon">"</div>
+                            </div>
+                            <div class="review_text">
+                                Мы с мужем решили сделать дизайнерский ремонт в квартире. Нас давно не устраивала
+                                лестница, ведущая на второй этаж...
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="review_slide">
+                        <div class="review_image">
+                            <img src="img/review.png" alt="">
+                        </div>
+                        <div class="review_block">
+                            <div class="review_head">
+                                <div class="review_name_and_date">
+                                    <div class="review_name">
+                                        Елена Иванова
+                                    </div>
+                                    <div class="review_date">
+                                        12.11.2018
+                                    </div>
+                                </div>
+
+                                <div class="review_icon">"</div>
+                            </div>
+                            <div class="review_text">
+                                Мы с мужем решили сделать дизайнерский ремонт в квартире. Нас давно не устраивала
+                                лестница, ведущая на второй этаж...
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="review_slide">
+                        <div class="review_image">
+                            <img src="img/review.png" alt="">
+                        </div>
+                        <div class="review_block">
+                            <div class="review_head">
+                                <div class="review_name_and_date">
+                                    <div class="review_name">
+                                        Елена Иванова
+                                    </div>
+                                    <div class="review_date">
+                                        12.11.2018
+                                    </div>
+                                </div>
+
+                                <div class="review_icon">"</div>
+                            </div>
+                            <div class="review_text">
+                                Мы с мужем решили сделать дизайнерский ремонт в квартире. Нас давно не устраивала
+                                лестница, ведущая на второй этаж...
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home_section partnership">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    сотрудничество
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="section_title">
+                    Наши партнеры
+                </h1>
+            </div>
+
+            <div class="col-md-6">
+                <div id="partnership_arrows">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="partners_slider">
+                    <div class="partner_slide">
+                        <img src="img/partners/1.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/2.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/3.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/4.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/5.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/6.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/4.png" alt="">
+                    </div>
+                    <div class="partner_slide">
+                        <img src="img/partners/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home_section home_news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_name">
+                    что нового?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h1 class="section_title">
+                    Новости
+                </h1>
+
+                <p class="section_desc">
+                    Лестницы окружают нас повсюду. Без них мы не могли бы подняться
+                </p>
+
+
+                <a href="#" class="news_link">Все новости</a>
+            </div>
+
+            <div class="col-md-9">
+                <div class="home_news_articles">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article class="home_article">
+                                <a href="#">
+                                    <div class="article_image" style="background-image: url('img/news1.png')">
+
+                                    </div>
+                                    <div class="article_date">
+                                        24 апреля 2018
+                                    </div>
+
+                                    <h1 class="article_title">
+                                        11 способов использовать
+                                        пространство под лестницей
+                                    </h1>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4">
+                            <article class="home_article">
+                                <a href="#">
+                                    <div class="article_image" style="background-image: url('img/news2.png')">
+
+                                    </div>
+                                    <div class="article_date">
+                                        24 апреля 2018
+                                    </div>
+
+                                    <h1 class="article_title">
+                                        Перила из нержавеющей стали: самые популярные модели
+                                    </h1>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4">
+                            <article class="home_article">
+                                <a href="#">
+                                    <div class="article_image" style="background-image: url('img/news3.png')">
+
+                                    </div>
+                                    <div class="article_date">
+                                        24 апреля 2018
+                                    </div>
+
+                                    <h1 class="article_title">
+                                        Производство ограждений, что надо знать о компании?
+                                    </h1>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container-fluid footer_logo_wrapper">
+        <div class="footer_logo">
+            <img src="img/logo.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-12">
+                <div class="footer_column_title">
+                    Контакты
+                </div>
+                <div class="footer_contacts">
+
+
+                    <!--  <div class="footer_address">
+                          <div class="contacts_icon">
+                              <img src="img/marker.png" alt="">
+                          </div>
+                          <div class="footer_address_text">
+                              г. Москва, Перова Поля 3-й
+                              проезд , д. 5
+                          </div>
+                      </div> -->
+
+
+                    <div class="footer_phones">
+                        <div class="phone_numbers">
+
+                            <div class="number">
+                                <div class="contacts_icon">
+                                    <img src="img/phone.png" alt="">
+                                </div>
+                                <a href='tel:+7 (495) 796-44-22' class="footer_number">
+                                    +7 (495) 796-44-22
+                                </a>
+                            </div>
+
+
+                            <div class="number">
+                                <div class="contacts_icon">
+                                    <img src="img/viber.png" alt="">
+                                    <img src="img/whatsapp.png" alt="">
+                                </div>
+                                <a href='tel:+7 (495) 796-44-22' class="footer_number">
+                                    +7 (495) 796-44-22
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer_mail_and_feedback">
+                        <div class="footer_mail">
+                            <div class="contacts_icon">
+                                <img src="img/mail.png" alt="">
+                            </div>
+                            akks-metal@yandex.ru
+                        </div>
+
+
+                        <button class="footer_feedback" data-remodal-target="callback_modal">
+                            Обратная связь
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="footer_column_title">
+                    Получение и оплата
+                </div>
+                <div class="footer_contacts">
+
+
+                    <nav class="footer_nav">
+                        <ul>
+                            <li><a href="#">Доставка курьером</a></li>
+                            <li><a href="#">Доставка транспортной
+                                компанией</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+
+                            <li><a href="#">Реквизиты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-6">
+                <div class="footer_column_title">
+                    Информация
+                </div>
+
+                <div class="footer_contacts">
+
+                    <nav class="footer_nav">
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#"> Правила торговли</a></li>
+                            <li><a href="#">Где купить?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12   ">
+                <!--<div class="footer_sales_and_social">
+
+
+                     <div class="footer_sales">
+                        <div class="footer_column_title">
+                            Акции
+                        </div>
+                        <a href="#">Наши акции</a>
+                    </div>
+
+                    <div class="footer_social">
+                        <div class="footer_column_title">
+                            Присоединяйтесь
+                        </div>
+
+                        <ul class="footer_social_icons">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="footer_column_title">
+                    Способы оплаты
+                </div>
+                <div class="footer_payments">
+
+                    <div class="payment_list">
+                        <div class="footer_pay">
+                            <img src="img/payment1.png" alt="">
+                        </div>
+                        <div class="footer_pay">
+                            <img src="img/payment2.png" alt="">
+                        </div>
+                        <div class="footer_pay">
+                            <img src="img/payment3.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer_copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        © Copyright 2018 Вся информация на сайте – собственность Aks-metal.ru <br>
+                        Публикация информации с сайта akss-metal.ru без разрешения запрещена. Все права защищены.
+                        Информация на сайте
+                        akss-metal.ru не является публичной офертой. <br> <br>
+
+                        Вы принимаете условия <a href="#">политики конфиденциальности</a> и
+                        <a href="#">пользовательского соглашения</a> каждый раз,
+                        когда оставляете
+                        свои данные в
+                        любой форме обратной связи на сайте akss-metal.ru
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<div class="remodal remodal_service" data-remodal-id="service_modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1 class="remodal_title">Заказать услугу</h1>
+    <p class="remodal_desc">
+        Заполните форму ниже и мы свяжемся с вами
+        в течении 15 минут для уточнения деталей
+    </p>
+
+
+    <form class="remodal_form" action="">
+        <label for="callback_name">Ваше имя: <span>*</span></label>
+        <input type="text" id="service_name" name="service_name" placeholder="Введите имя" required>
+
+        <label for="service_phone">Телефон: <span>*</span></label>
+        <input type="text" id="service_phone" name="service_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+               required>
+
+        <label for="service_mail">E-mail: <span>*</span></label>
+        <input type="text" id="service_mail" name="service_mail" placeholder="Электронная почта" required>
+
+        <label for="service_comment">Комментарий</label>
+        <textarea id="service_comment" name="service_comment" placeholder="Сообщение" required></textarea>
+
+
+        <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple="">
+        <label for="file-3" class="file_label">
+            <img src="img/clip.png" alt="">
+            <span>Прикрепить файл</span>
+        </label>
+
+        <div>
+            <button type="submit" class="remodal_submit">Отправить</button>
+        </div>
+
+
+    </form>
+</div>
+
+<div class="remodal remodal_callback" data-remodal-id="callback_modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1 class="remodal_title">Обратный звонок</h1>
+    <p class="remodal_desc">
+        Оставьте свой телефон и мы свяжемся с вами в течении 15 минут
+    </p>
+
+
+    <form class="remodal_form" action="">
+        <label for="callback_name">Ваше имя: <span>*</span></label>
+        <input type="text" id="callback_name" name="callback_name" placeholder="Введите имя" required>
+
+        <label for="callback_phone">Телефон: <span>*</span></label>
+        <input type="text" id="callback_phone" name="callback_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+               required>
+
+        <div>
+            <button type="submit" class="remodal_submit">Отправить</button>
+        </div>
+
+
+    </form>
+</div>
+
+<div class="remodal" data-remodal-id="oneclick_modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1 class="remodal_title">Купить в 1 клик</h1>
+    <p class="remodal_desc">
+        Оставьте свой телефон и мы свяжемся с вами в течении 15 минут
+    </p>
+
+
+    <form class="remodal_form" action="">
+
+        <label for="callback_phone">Телефон: <span>*</span></label>
+        <input type="text" id="oneclick_phone" name="callback_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+               required>
+
+        <div>
+            <button type="submit" class="remodal_submit">Отправить</button>
+        </div>
+
+
+    </form>
+</div>
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="libs/animate/wow.min.js"></script>
+<script src="libs/Remodal-1.1.1/dist/remodal.min.js"></script>
+<script src="libs/rangeslider.js-2.3.0/powerange.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/jquery-confirm/jquery-confirm.min.js"></script>
+<script src="libs/custom_file/custom-file-input.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

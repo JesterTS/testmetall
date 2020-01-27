@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="js/formstyle/jquery.formstyler.css">
+    <link rel="stylesheet" href="js/formstyle/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="modalSucsess">
+        <div class="contentSucsess">
+            <span class="close-btn" onclick="closeModalFeed();">
+                <img alt="" src="img/close.png" />
+            </span>
+            <img alt="" class="imgSucsess" src="img/sucsess.png" />
+            <h3>
+                <span>Ваша заявка</span>
+                <br /> Успешно принята</h3>
+
+            <p>Наш менеджер свяжется с вами
+                <br /> в ближайшее время</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-fluid header_menu_wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-1 d-lg-none">
+                        <div class="burger_button">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-11">
+                        <nav class="nav_menu">
+                            <ul>
+                                <li><a href="#">О Компании</a></li>
+                                /
+                                <li><a href="#">Услуги <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                /
+                                <li><a href="#">Преимущества</a></li>
+                                /
+                                <li><a href="#">Статьи</a></li>
+                                /
+                                <li><a href="#">Новости</a></li>
+                                /
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-2 col-6">
+                        <button class="header_callback" data-remodal-target="callback_modal">
+                            Обратный звонок
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-6">
+                        <ul class="header_social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid header_info_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="header_logo_wrapper">
+                            <div class="header_logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+
+                            <div class="header_slash"></div>
+
+                            <h1 class="header_logo_text">
+                                Производство <br>
+                                металлоконструкций <br>
+                                и садового инструмента
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-10 ">
+
+                        <div class="header_info_blocks">
+
+                            <div class="header_phones">
+
+                                <div class="phone_numbers">
+
+                                    <div class="number">
+                                        <div class="phones_logo">
+                                            <img src="img/phone.png" alt="">
+                                        </div>
+                                        <a href="tel:+7 (495) 796-44-22" class="header_number">
+                                            +7 (495) 796-44-22
+                                        </a>
+                                    </div>
+
+
+                                    <div class="number">
+                                        <div class="phones_logo">
+                                            <img src="img/viber.png" alt="">
+                                            <img src="img/whatsapp.png" alt="">
+                                        </div>
+                                        <a href="tel:+7 (495) 796-44-22" class="header_number">
+                                            +7 (495) 796-44-22
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="header_contacts">
+                                <div class="header_time">
+                                    <img src="img/clock.png" alt="">
+                                    пн-сб 10:00-18:00
+                                </div>
+
+                                <div class="header_mail">
+                                    <img src="img/mail.png" alt="">
+                                    akks-metal@yandex.ru
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-2 ">
+                        <div class="header_cart_wrapper">
+                            <div class="header_cart_icon">
+                                <img src="img/shopping_cart.png" alt="">
+                                <div class="cart_count">
+                                    0
+                                </div>
+                            </div>
+
+                            <div class="header_cart_text">
+                                <div class="cart_title">
+                                    Корзина:
+                                </div>
+                                <div class="cart_sum">
+                                    0 руб.
+                                </div>
+                            </div>
+                            <div class="content_cart_top">
+                                <div class="item_prod_cart d-flex">
+                                    <div class="image_cart_prod">
+                                        <img src="img/elements/image_cart.png" class="mw-100" alt="">
+                                    </div>
+
+                                    <div class="info_cart_prod">
+                                        <a href="">
+                                            Бур садовый D160 2 шн.<br>
+                                            длинное название товара
+                                        </a>
+                                        <div class="bottom-content_item_cart d-flex align-items-center justify-content-between">
+                                            <div class="amount_block" id="amout_10">
+                                                <button class="btn_coll" onclick="minusCart('#amout_10')">-</button>
+                                                <input type="text" class="coll_input amount_field" value="1">
+                                                <button class="btn_coll" onclick="pluseCart('#amout_10')">+</button>
+                                            </div>
+                                            <p class="price_cart_mini">
+                                                1800 руб
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="item_prod_cart d-flex">
+                                    <div class="image_cart_prod">
+                                        <img src="img/elements/image_cart.png" class="mw-100" alt="">
+                                    </div>
+
+                                    <div class="info_cart_prod">
+                                        <a href="">
+                                            Бур садовый D160 2 шн.<br>
+                                            длинное название товара
+                                        </a>
+                                        <div class="bottom-content_item_cart d-flex align-items-center justify-content-between">
+                                            <div class="amount_block" id="amout_11">
+                                                <button class="btn_coll" onclick="minusCart('#amout_11')">-</button>
+                                                <input type="text" class="coll_input amount_field" value="1">
+                                                <button class="btn_coll" onclick="pluseCart('#amout_11')">+</button>
+                                            </div>
+                                            <p class="price_cart_mini">
+                                                1800 руб
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="itogo_block">
+                                    <p>Итого: <span>1 800 руб</span></p>
+                                    <a href="" class="cart_link_mini">В корзину</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid main_menu_wrapper d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-9 order-2 order-lg-1">
+                        <nav class="main_menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Каталог
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="main_submenu">
+                                        <li>
+                                            <a href="all_services.html">Самовывоз</a>
+
+                                            <ul class="sub_sub_menu">
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Транспортными компаниями</a>
+                                            <ul class="sub_sub_menu">
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Курьерская доставка</a>
+
+                                            <ul class="sub_sub_menu">
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                                <li><a href="#">Lorem</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Доставка
+                                        <i class="fa fa-angle-right" aria-hidden="true"> </i>
+                                    </a>
+                                    <ul class="main_submenu">
+                                        <li><a href="#">Самовывоз</a></li>
+                                        <li><a href="#">Транспортными компаниями</a></li>
+                                        <li><a href="#">Курьерская доставка</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Оплата
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="main_submenu">
+                                        <li><a href="#">Самовывоз</a></li>
+                                        <li><a href="#">Транспортными компаниями</a></li>
+                                        <li><a href="#">Курьерская доставка</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Где купить
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="main_submenu">
+                                        <li><a href="#">Самовывоз</a></li>
+                                        <li><a href="#">Транспортными компаниями</a></li>
+                                        <li><a href="#">Курьерская доставка</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Акции
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="main_submenu">
+                                        <li><a href="#">Самовывоз</a></li>
+                                        <li><a href="#">Транспортными компаниями</a></li>
+                                        <li><a href="#">Курьерская доставка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-xl-3 order-1 order-lg-2">
+                        <div class="header_search">
+                            <form action="/">
+                                <input type="text" placeholder="Поиск" required>
+                                <button type="submit">
+                                    <img src="img/search.png" alt="">
+                                </button>
+                            </form>
+
+
+                            <div class="burger_button_close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="main_banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_slider_wrapper">
+                        <div id="main_banner_slider">
+                            <div class="banner_slide">
+                                <div class="banner_content" style="background-image: url('img/banner1.png')">
+                                    <div class="banner_title">
+                                        <h5>Металлоконструкции</h5>
+                                        <h1>Аксс Металл</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="banner_slide">
+                                <div class="banner_content" style="background-image: url('img/banner2.png')">
+                                    <div class="banner_title">
+                                        <h5>Металлоконструкции2</h5>
+                                        <h1>Аксс Металл2</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="banner_slide">
+                                <div class="banner_content" style="background-image: url('img/banner1.png')">
+                                    <div class="banner_title">
+                                        <h5>Металлоконструкции3</h5>
+                                        <h1>Аксс Металл3</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="banner_slider_pag">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="content_block">
+        <div class="container">
+            <div class="breadcrumb_block">
+                <ul>
+                    <li class="item_breadcrumb">
+                        <a href="">Главная</a>
+                    </li>
+                    <li class="item_breadcrumb">
+                        <a href="">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="title_page">Корзина покупок</h3>
+            <table class="table_cart">
+                <tr>
+                    <th>
+                        Фото
+                    </th>
+                    <th>
+                        Наименование
+                    </th>
+                    <th>
+                        Количество
+                    </th>
+                    <th>
+                        Цена, руб
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <img src="img/elements/image_cart.png" class="mw-100" alt="">
+                    </td>
+                    <td>
+                        <a href="" class="name_item_product">Бур садовый D160 2 шн.<br> наименование товара в две
+                            строчки</a>
+                    </td>
+                    <td>
+                        <div class="amount_block" id="amout_2">
+                            <button class="btn_coll" onclick="minusCart('#amout_2')">-</button>
+                            <input type="text" class="coll_input amount_field" value="1">
+                            <button class="btn_coll pt-1" onclick="pluseCart('#amout_2')">+</button>
+                        </div>
+
+                    </td>
+                    <td>
+                        <p class="price_product">
+                            1 800 руб
+                        </p>
+                    </td>
+                    <td>
+                        <button class="btn_deleted"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <img src="img/elements/image_cart.png" class="mw-100" alt="">
+                    </td>
+                    <td>
+                        <a href="" class="name_item_product">Бур садовый D160 2 шн.<br> наименование товара в две
+                            строчки</a>
+                    </td>
+                    <td>
+                        <div class="amount_block" id="amout_1">
+                            <button class="btn_coll" onclick="minusCart('#amout_1')">-</button>
+                            <input type="text" class="coll_input amount_field" value="1">
+                            <button class="btn_coll pt-1" onclick="pluseCart('#amout_1')">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="price_product">
+                            1 800 руб
+                        </p>
+                    </td>
+                    <td>
+                        <button class="btn_deleted"></button>
+                    </td>
+                </tr>
+            </table>
+            <div class="row">
+                <div class="col-12 col-lg-12 text-right">
+                    <p class="summ_cart">
+                        Итого: <span>3 600 руб</span>
+                    </p>
+                    <button class="btn_checkout" onclick="$('.checkout_content').show();">Оформить заказ</button>
+                </div>
+            </div>
+            <div class="checkout_content">
+                <h3 class="title_page">Оформление заказа</h3>
+                <form action="" class="js-form-validate">
+                    <div class="item_step_checkout">
+                        <div class="title_step">
+                            <span class="num_checkout">1</span> Основные данные <span onclick="$('#step_1_content').slideToggle(400);"
+                                class="arrow_checkout"></span>
+                        </div>
+
+                        <div class="content_step" id="step_1_content">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="input_group">
+                                        <p>Фамилия:<span class="required">*</span></p>
+                                        <input type="text" id="family" class="input_checkout required_r" onchange="validIn(this)"
+                                            placeholder="Введите фамилию">
+                                    </div>
+                                    <div class="input_group">
+                                        <p>Имя:<span class="required">*</span></p>
+                                        <input type="text" id="name" class="input_checkout required_r" onchange="validIn(this)"
+                                            placeholder="Введите имя">
+                                    </div>
+                                    <div class="input_group">
+                                        <p>Отчество:</p>
+                                        <input type="text" class="input_checkout" placeholder="Введите отчество">
+                                    </div>
+                                    <div class="input_group">
+                                        <p>Телефон:<span class="required">*</span></p>
+                                        <input type="text" id="phone" class="input_checkout number-mask required_r"
+                                            onchange="validIn(this)" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="input_group">
+                                        <p>Email:<span class="required">*</span></p>
+                                        <input type="mail" id="email" class="input_checkout required_r" onchange="validIn(this)"
+                                            placeholder="Введите email">
+                                    </div>
+                                    <div class="input_group">
+                                        <p>Город:</p>
+                                        <select name="select_city" class="select_item">
+                                            <option value="">Выберите город</option>
+                                            <option value="">Санкт-Петербург</option>
+                                            <option value="">Новосибирск</option>
+                                            <option value="">Екатеринбург</option>
+                                            <option value="">Нижний Новгород</option>
+                                            <option value="">Казань</option>
+                                            <option value="">Челябинск</option>
+                                            <option value="">Омск</option>
+                                            <option value="">Самара</option>
+                                            <option value="">Ростов-на-Дону</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="input_group">
+                                        <p>Тип покупателя:</p>
+                                        <select name="select_city" class="select_item" id="user_stat">
+                                            <option value="1">Физическое лицо</option>
+                                            <option value="2">Юридическое лицо</option>
+                                        </select>
+                                    </div>
+                                    <div class="input_group user_dop">
+                                        <p>Название организации:<span class="required">*</span></p>
+                                        <input type="text" onchange="validIn(this)" id="com" class="input_checkout" placeholder="Название организации">
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="input_group user_dop">
+                                        <p>ИНН:<span class="required">*</span></p>
+                                        <input type="text" onchange="validIn(this)" class="input_checkout" id="inn"
+                                            placeholder="Введите ИНН">
+                                    </div>
+                                    <div class="input_group user_dop">
+                                        <p>Юридический адрес:</p>
+                                        <input type="text" class="input_checkout" placeholder="Введите адрес">
+                                        <input type="file" class="file_input" id="file">
+                                        <label for="file"><i><img src="img/elements/file.png" alt=""></i> Прикрепить
+                                            карточку с
+                                            реквизитами</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 text-right">
+                                    <button class="next_step btn_next_style" onclick="step_1()" type="button">Далее</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item_step_checkout">
+                        <div class="title_step">
+                            <span class="num_checkout">2</span> Способы доставки <span onclick="$('#etap_two').slideToggle(400);"
+                                class="arrow_checkout" id="ar2"></span>
+                        </div>
+                        <div class="content_step" id="etap_two">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="input_group">
+                                        <p>Способ доставки:</p>
+                                        <select name="select_city" class="select_item" id="shipping_select">
+                                            <option value="2">Доставка ТК</option>
+                                            <option value="1">Почта России</option>
+                                            <option value="1">Самовывоз</option>
+                                            <option value="1">Курьерская доставка</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+
+                                    <div class="input_group user_dop2 active">
+                                        <p>Адрес доставки:</p>
+                                        <input type="text" class="input_checkout" id="adress" placeholder="Введите улицу, №дома, квартиры">
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                        <button class="next_step btn_next_style" onclick="back_1()"  type="button">Назад</button>
+                                    </div>
+                                <div class="col-12 col-lg-6 text-right">
+                                        <button class="next_step2 btn_next_style" onclick="step_2()" type="button">Далее</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_step_checkout bottom_big">
+                        <div class="title_step">
+                            <span class="num_checkout">3</span> Способы оплаты <span onclick="$('#etap_three').slideToggle(400);"
+                                class="arrow_checkout" id="ar3"></span>
+                        </div>
+                        <div id="etap_three">
+                            <div class="content_step">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="input_group">
+                                            <p>Способ оплаты:</p>
+                                            <select name="select_city" class="select_item" id="pay_info">
+                                                <option value="1">Наложный платеж</option>
+                                                <option value="2">Квитанция Сбербанка</option>
+                                                <option value="3">Картой</option>
+                                                <option value="4">Яндекс.Деньги</option>
+                                                <option value="5">WebMoney</option>
+                                            </select>
+                                            <p class="text_info-pay">
+                                                Информация 1
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="content_step">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="input_group">
+                                            <p>Ваш комментарий к заказу</p>
+                                            <textarea class="textarea_checkout" placeholder="Текст сообщения ... "></textarea>
+                                        </div>
+                                        <input type="checkbox" class="checkbox_checkout" id="check_1">
+                                        <label for="check_1">Даю согласие на обработку своих персональных данных</label>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <p class="shipping_summ d-flex justify-content-between">
+                                            <span>Доставка:</span><span class="text_shipping">600 руб</span>
+                                        </p>
+                                        <p class="final_summ d-flex justify-content-between align-items-center">
+                                            <span>Итого:</span><span class="text_shipping">600 руб</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-3 text-center">
+
+                                        <button class="btn_checkout">Подтвердить заказ</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid footer_logo_wrapper">
+            <div class="footer_logo">
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <div class="footer_column_title">
+                        Контакты
+                    </div>
+                    <div class="footer_contacts">
+
+
+                        <!--  <div class="footer_address">
+                          <div class="contacts_icon">
+                              <img src="img/marker.png" alt="">
+                          </div>
+                          <div class="footer_address_text">
+                              г. Москва, Перова Поля 3-й
+                              проезд , д. 5
+                          </div>
+                      </div> -->
+
+
+                        <div class="footer_phones">
+                            <div class="phone_numbers">
+
+                                <div class="number">
+                                    <div class="contacts_icon">
+                                        <img src="img/phone.png" alt="">
+                                    </div>
+                                    <a href='tel:+7 (495) 796-44-22' class="footer_number">
+                                        +7 (495) 796-44-22
+                                    </a>
+                                </div>
+
+
+                                <div class="number">
+                                    <div class="contacts_icon">
+                                        <img src="img/viber.png" alt="">
+                                        <img src="img/whatsapp.png" alt="">
+                                    </div>
+                                    <a href='tel:+7 (495) 796-44-22' class="footer_number">
+                                        +7 (495) 796-44-22
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer_mail_and_feedback">
+                            <div class="footer_mail">
+                                <div class="contacts_icon">
+                                    <img src="img/mail.png" alt="">
+                                </div>
+                                akks-metal@yandex.ru
+                            </div>
+
+
+                            <button class="footer_feedback" data-remodal-target="callback_modal">
+                                Обратная связь
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="footer_column_title">
+                        Получение и оплата
+                    </div>
+                    <div class="footer_contacts">
+
+
+                        <nav class="footer_nav">
+                            <ul>
+                                <li><a href="#">Доставка курьером</a></li>
+                                <li><a href="#">Доставка транспортной
+                                        компанией</a></li>
+                                <li><a href="#">Самовывоз</a></li>
+
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-6">
+                    <div class="footer_column_title">
+                        Информация
+                    </div>
+
+                    <div class="footer_contacts">
+
+                        <nav class="footer_nav">
+                            <ul>
+                                <li><a href="#">Как сделать заказ</a></li>
+                                <li><a href="#"> Правила торговли</a></li>
+                                <li><a href="#">Где купить?</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12   ">
+                    <!--<div class="footer_sales_and_social">
+
+
+                     <div class="footer_sales">
+                        <div class="footer_column_title">
+                            Акции
+                        </div>
+                        <a href="#">Наши акции</a>
+                    </div>
+
+                    <div class="footer_social">
+                        <div class="footer_column_title">
+                            Присоединяйтесь
+                        </div>
+
+                        <ul class="footer_social_icons">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                    <div class="footer_column_title">
+                        Способы оплаты
+                    </div>
+                    <div class="footer_payments">
+
+                        <div class="payment_list">
+                            <div class="footer_pay">
+                                <img src="img/payment1.png" alt="">
+                            </div>
+                            <div class="footer_pay">
+                                <img src="img/payment2.png" alt="">
+                            </div>
+                            <div class="footer_pay">
+                                <img src="img/payment3.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid footer_copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            © Copyright 2018 Вся информация на сайте – собственность Aks-metal.ru <br>
+                            Публикация информации с сайта akss-metal.ru без разрешения запрещена. Все права защищены.
+                            Информация на сайте
+                            akss-metal.ru не является публичной офертой. <br> <br>
+
+                            Вы принимаете условия <a href="#">политики конфиденциальности</a> и
+                            <a href="#">пользовательского соглашения</a> каждый раз,
+                            когда оставляете
+                            свои данные в
+                            любой форме обратной связи на сайте akss-metal.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <div class="remodal remodal_service" data-remodal-id="service_modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 class="remodal_title">Заказать услугу</h1>
+        <p class="remodal_desc">
+            Заполните форму ниже и мы свяжемся с вами
+            в течении 15 минут для уточнения деталей
+        </p>
+
+
+        <form class="remodal_form" action="">
+            <label for="callback_name">Ваше имя: <span>*</span></label>
+            <input type="text" id="service_name" name="service_name" placeholder="Введите имя" required>
+
+            <label for="service_phone">Телефон: <span>*</span></label>
+            <input type="text" id="service_phone" name="service_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+                required>
+
+            <label for="service_mail">E-mail: <span>*</span></label>
+            <input type="text" id="service_mail" name="service_mail" placeholder="Электронная почта" required>
+
+            <label for="service_comment">Комментарий</label>
+            <textarea id="service_comment" name="service_comment" placeholder="Сообщение" required></textarea>
+
+
+            <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected"
+                multiple="">
+            <label for="file-3" class="file_label">
+                <img src="img/clip.png" alt="">
+                <span>Прикрепить файл</span>
+            </label>
+
+            <div>
+                <button type="submit" class="remodal_submit">Отправить</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="remodal remodal_callback" data-remodal-id="callback_modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 class="remodal_title">Обратный звонок</h1>
+        <p class="remodal_desc">
+            Оставьте свой телефон и мы свяжемся с вами в течении 15 минут
+        </p>
+
+
+        <form class="remodal_form" action="">
+            <label for="callback_name">Ваше имя: <span>*</span></label>
+            <input type="text" id="callback_name" name="callback_name" placeholder="Введите имя" required>
+
+            <label for="callback_phone">Телефон: <span>*</span></label>
+            <input type="text" id="callback_phone" name="callback_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+                required>
+
+            <div>
+                <button type="submit" class="remodal_submit">Отправить</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="oneclick_modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 class="remodal_title">Купить в 1 клик</h1>
+        <p class="remodal_desc">
+            Оставьте свой телефон и мы свяжемся с вами в течении 15 минут
+        </p>
+
+
+        <form class="remodal_form" action="">
+
+            <label for="callback_phone">Телефон: <span>*</span></label>
+            <input type="text" id="oneclick_phone" name="callback_phone" placeholder="+ 7 ( _ _ _ ) _ _ _   _ _   _ _"
+                required>
+
+            <div>
+                <button type="submit" class="remodal_submit">Отправить</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="libs/animate/wow.min.js"></script>
+    <script src="libs/Remodal-1.1.1/dist/remodal.min.js"></script>
+    <script src="libs/rangeslider.js-2.3.0/powerange.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/jquery-confirm/jquery-confirm.min.js"></script>
+    <script src="libs/custom_file/custom-file-input.js"></script>
+    <script src="js/formstyle/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $('select').styler();
+        $(".number-mask").mask("+7(999)-999-99-99");
+        $("#inn").mask("999999999999");
+        /*Дополнительные поля*/
+
+        $("#user_stat").change(function (e) {
+            e.preventDefault();
+            if (this.value === '1') {
+                $('.user_dop').removeClass('active');
+                $('.next_step').attr('onclick','step_1()');
+            } else {
+                $('.user_dop').addClass('active');
+                $('.next_step').attr('onclick','step_1_com()');
+            }
+        });
+        $("#pay_info").change(function (e) {
+            e.preventDefault();
+            if (this.value === '1') {
+                $('.text_info-pay').html('Информация 1');
+            }
+            if (this.value === '2') {
+                $('.text_info-pay').html('Информация 2');
+            }
+            if (this.value === '3') {
+                $('.text_info-pay').html('Информация 3');
+            }
+            if (this.value === '4') {
+                $('.text_info-pay').html('Информация 4');
+            }
+            if (this.value === '5') {
+                $('.text_info-pay').html('Информация 5');
+            }
+        });
+        $('#shipping_select').change(function (e) {
+            e.preventDefault();
+            if (this.value === '1') {
+                $('.user_dop2').removeClass('active');
+                $('.next_step2').attr('onclick','step_2_com()');
+            } else {
+                $('.user_dop2').addClass('active');
+                $('.next_step2').attr('onclick','step_2()');
+            }
+        });
+        function back_1(){
+                $('#etap_two').hide();
+                $('#step_1_content').show();
+        }
+        function step_2(){
+            $('#etap_two').hide();
+            $('#etap_three').show();
+        }
+        function step_2_com(){
+            var validR = false;
+            if (!$('#adress').val()) {
+                if (!$('#adress').val()){
+                    $('#adress').addClass('error_input');
+                }else{
+                    $('#adress').removeClass('error_input');
+                }
+                
+                
+
+                validR = false;
+            } else {
+                $('.input_checkout').removeClass('error_input');
+                validR = true;
+            }
+            if (validR) {
+                $('#etap_two').hide();
+                $('#etap_three').show();
+                $('#ar3').show();
+                
+            }
+        }
+        /*1 этап без инн и компании*/
+        function step_1(){
+            var validR = false;
+            if (!$('#family').val() || !$('#name').val() || !$('#email').val() || !$('#phone').val()) {
+                if (!$('#family').val()){
+                    $('#family').addClass('error_input');
+                }else{
+                    $('#family').removeClass('error_input');
+                }
+                
+                if (!$('#name').val()) {
+                    $('#name').addClass('error_input');
+                } else {
+                    $('#name').removeClass('error_input');
+                }
+                if (!$('#email').val()) {
+                    $('#email').addClass('error_input');
+                } else {
+                    $('#email').removeClass('error_input');
+                }
+                if (!$('#phone').val()) {
+                    $('#phone').addClass('error_input');
+
+                } else {
+                    $('#phone').removeClass('error_input');
+                }
+
+                validR = false;
+            } else {
+                $('.input_checkout').removeClass('error_input');
+                validR = true;
+            }
+            if (validR) {
+                $('#etap_two').show();
+                $('#ar2').show();
+                $('#step_1_content').hide();
+            }
+        }
+        /*Первый этап с данными о компании*/
+        function step_1_com(){
+            var validR = false;
+            if (!$('#family').val() || !$('#name').val() || !$('#email').val() || !$('#phone').val() || !$('#com').val() || !$('#inn').val() ) {
+                if (!$('#family').val()){
+                    $('#family').addClass('error_input');
+                }else{
+                    $('#family').removeClass('error_input');
+                }
+                if (!$('#inn').val()){
+                    $('#inn').addClass('error_input');
+                }else{
+                    $('#inn').removeClass('error_input');
+                }
+                
+                if (!$('#name').val()) {
+                    $('#name').addClass('error_input');
+                } else {
+                    $('#name').removeClass('error_input');
+                }
+                if (!$('#com').val()) {
+                    $('#com').addClass('error_input');
+                } else {
+                    $('#com').removeClass('error_input');
+                }
+                if (!$('#email').val()) {
+                    $('#email').addClass('error_input');
+                } else {
+                    $('#email').removeClass('error_input');
+                }
+                if (!$('#phone').val()) {
+                    $('#phone').addClass('error_input');
+
+                } else {
+                    $('#phone').removeClass('error_input');
+                }
+
+                validR = false;
+            } else {
+                $('.input_checkout').removeClass('error_input');
+                validR = true;
+            }
+            if (validR) {
+                $('#etap_two').show();
+                $('#ar2').show();
+                $('#step_1_content').hide();
+            }
+        }
+        $('#inn').change(function () {
+            console.log($('#inn').val().length);
+            if ($('#inn').val().length < 12) {
+                $('#inn').addClass('error_input');
+            } else {
+                $('#inn').removeClass('error_input');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

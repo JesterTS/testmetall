@@ -1,0 +1,170 @@
+.service_head
+  box-shadow: 0 0 21px rgba(186, 183, 183, 0.21)
+  #service_slider
+    height: 100%
+  .service_image
+    display: flex
+    align-items: center
+    justify-content: center
+    outline: none
+    height: 100%
+    img
+      max-width: 100%
+      width: 100%
+      height: auto
+
+  .service_text
+    padding: 25px 0
+    .service_desc
+      color: #303030
+      font-family: MullerMedium
+      font-size: 17px
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 20px
+
+    .service_button
+      box-shadow: 0 15px 21px rgba(114, 52, 80, 0.5)
+      background-image: linear-gradient(to right, #164779 0%, #e11d1e 100%)
+      color: #ffffff
+      font-family: MullerBold
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      padding: 8px 70px
+      border: none
+
+
+
+#service_slider_nav
+  margin-top: 20px
+  padding: 0 30px
+  background: #f1f6f8
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 50%)
+  .slide_nav
+    height: 85px
+    width: 85px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 10px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    border: 2px solid transparent
+    outline: none
+    cursor: pointer
+  .slick-current
+    border: 2px solid #e11d1e
+    box-shadow: 0 15px 21px rgba(114, 52, 80, 0.5)
+
+  .slick-arrow
+    width: auto
+    height: auto
+    &:before
+      color: #b5c0c5
+      font-family: FontAwesome
+      font-size: 35px
+
+  .slick-prev
+    left: 10px
+    &:before
+      content: '\f104'
+  .slick-next
+    right: 10px
+    &:before
+      content: '\f105'
+
+
+.service_content
+  margin-top: 30px
+  padding: 25px 30px
+  box-shadow: 0 0 21px rgba(186, 183, 183, 0.21)
+
+  h1, h2, h3, h4, h5, h6
+    font-family: MullerBold
+    color: #222222
+
+  h2
+    font-size: 22px
+    margin-bottom: 15px
+
+  h4
+    font-size: 18px
+
+  p
+    color: #666666
+    font-family: Muller
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+
+
+.service_guarantee
+  margin: 20px 0
+  background-color: #f1f6f8
+  padding: 25px 40px
+  display: flex
+  align-items: center
+  img
+    display: flex
+    align-items: center
+    margin-right: 20px
+    text-shadow: 0 15px 21px rgba(114, 52, 80, 0.5)
+
+  p
+    color: #14477a
+    font-family: MullerMedium
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    margin-bottom: 0
+
+
+
+.our_works
+  margin: 50px -30px -25px -30px
+  padding: 25px 30px
+  background: #f1f6f8
+  .works_head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .works_title
+      color: #222222
+      font-family: MullerBold
+      font-size: 22px
+      font-weight: 400
+      line-height: 60px
+
+#works_slider
+  .work_block
+    margin: 0 10px
+    transition: .3s
+    &:hover
+      .work_name
+        color: #e11d1e
+    a
+      text-decoration: none
+    .work_image
+      height: 190px
+      width: 100%
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+
+    .work_name
+      height: 70px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      color: #303030
+      font-family: MullerMedium
+      font-size: 15px
+      font-weight: 400
+      line-height: 16px
+      background: white
+      text-decoration: none
+      padding: 0 10px
+      transition: .3s

@@ -1,0 +1,70 @@
+.articles_wrapper
+  article
+    padding: 35px 35px 35px 0
+    border: 1px solid #dce6ea
+    display: flex
+    align-items: center
+    margin: 20px 0
+    transition: .3s
+    .article_image
+      height: 150px
+      width: 40%
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+      position: relative
+      margin-right: 15px
+      a
+        display: block
+        height: 100%
+        width: 100%
+      .article_date
+        color: #ffffff
+        font-family: MullerBold
+        font-size: 12px
+        font-weight: 400
+        padding: 3px 10px
+        position: absolute
+        top: 0
+        left: 0
+        background: #e11d1e
+    .article_text
+      width: 60%
+      .article_title
+        margin-bottom: 25px
+        line-height: 1
+        a
+          color: #222222
+          font-family: MullerBold
+          font-size: 17px
+          font-weight: 400
+          text-decoration: none
+          line-height: 1
+      .article_desc
+        color: #555555
+        font-family: Muller
+        font-size: 15px
+        font-weight: 400
+      .article_link
+        color: #14477a
+        font-family: MullerBold
+        font-size: 16px
+        font-weight: 400
+        text-decoration: underline
+        transition: .3s
+    &:nth-child(2n)
+      flex-direction: row-reverse
+      padding: 35px 0 35px 35px
+      .article_image
+        margin-right: 0
+        margin-left: 15px
+
+      .article_text
+        text-align: right
+
+    &:hover
+      box-shadow: 0 15px 21px rgba(234, 197, 197, 0.5)
+      border: 1px solid #e11d1e
+      .article_text
+        .article_link
+          color: #e11d1e

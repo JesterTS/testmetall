@@ -1,0 +1,504 @@
+@media only screen and (max-width: 1370px)
+  header
+    &:before
+      left: -160px
+
+
+
+@media only screen and (max-width: 1200px)
+
+  header
+    &:before
+      left: -250px
+      top: 120px
+    .header_info_wrapper
+      .header_info_blocks
+        flex-direction: column
+        align-items: center
+
+      .header_logo_wrapper
+        .header_logo_text
+          align-items: center
+    .header_menu_wrapper
+      .nav_menu
+        ul
+          font-size: 12px
+
+
+  .we_offer
+    .we_offer_title_wrap
+      flex-direction: column
+
+
+  footer
+    .footer_nav
+      ul
+        padding-left: 10px
+
+@media only screen and (max-width: 991px)
+  header
+    &:before
+      content: none
+    .header_menu_wrapper
+      .nav_menu
+        ul
+
+          width: 100%
+          flex-wrap: wrap
+          li
+            margin: 0 5px
+
+
+      .header_callback
+        margin-top: 15px
+
+    .header_info_wrapper
+      .header_info_blocks
+        flex-direction: row
+        align-items: center
+        margin-top: 20px
+
+    .header_cart_wrapper
+      margin-top: 20px
+
+    .main_menu_wrapper
+      position: fixed
+      padding: 30px 15px
+      z-index: 9999
+      width: 100vw
+      height: 100vh
+
+      top: 0
+      left: 0
+      background-color: #14477a
+      color: #ffffff
+      font-family: MullerMedium
+      font-size: 15px
+      text-transform: uppercase
+      overflow-y: scroll
+      display: none
+      .header_search
+        .burger_button_close
+          display: block
+        form
+          input
+            width: auto
+      .container
+        max-width: 100%
+      ul
+
+        list-style: none
+        display: flex
+        flex-direction: column
+        padding: 0
+        margin: 0
+        margin-top: 30px
+        li
+          z-index: 9999
+          font-family: MullerBold
+          &:hover
+            a
+              background-color: transparent
+              transform: none
+              z-index: 9999
+              i
+                color: inherit
+              &:after
+                opacity: 1
+                z-index: 9999
+            .main_submenu
+              display: none
+
+
+          a
+            color: white
+            display: flex
+            align-items: center
+            line-height: 1
+            text-decoration: none
+            padding: 0
+            margin-top: 20px
+            //transition: .5s
+            position: relative
+            z-index: 30
+            font-size: 22px
+            &:after
+              content: none
+
+            &:hover
+              background-color: transparent
+              transform: none
+              z-index: 9999
+              color: #e11d1e
+
+            i
+              margin-top: -4px
+              line-height: 1
+              margin-left: 15px
+              font-size: 25px
+              color: inherit
+          //transition: .3s
+
+          .main_submenu
+
+            position: static
+            box-shadow: none
+            background-color: transparent
+            margin-top: 0
+            flex-direction: column
+            list-style: none
+            margin-left: 0
+            display: none
+            padding-left: 10px
+
+            li
+              z-index: 5
+              &:hover
+                a
+                  background: none
+                .sub_sub_menu
+                  display: none
+              a
+                font-family: MullerMedium
+                font-size: 15px
+                color: white
+                margin: 0
+                text-transform: none
+                transform: scale(1)
+                background: transparent
+                padding: 20px 25px
+                z-index: 5
+                position: relative
+                &:hover
+                  background: transparent
+                  transform: scale(1)
+                  z-index: 5
+                &:before
+                  content: ""
+                  position: absolute
+                  width: 5px
+                  height: 5px
+                  left: 10px
+                  background: #e11d1e
+                &:after
+                  content: none
+              .sub_sub_menu
+                position: static
+                left: 100%
+                top: 0
+                display: none
+                margin-top: 0
+                padding-left: 20px
+                flex-direction: column
+                li
+                  a
+                    background: none
+                    transition: .3s
+                    &:before
+                      content: '-'
+                      background: transparent
+                      width: auto
+                      height: auto
+                    &:hover
+                      color: #e11d1e
+
+
+  .main_banner_wrapper
+    padding: 0
+    .banner_slider_wrapper
+      padding: 15px 0
+      width: auto
+      #main_banner_slider
+        .banner_slide
+          .banner_content
+            .banner_title
+              h5
+                font-size: 25px
+              h1
+                font-size: 40px
+
+  .home_news
+    .news_link
+      padding: 10px 20px
+
+
+
+  footer
+    .footer_sales_and_social
+      flex-direction: column
+
+    .footer_column_title
+      margin-top: 25px
+
+
+  .banner
+    .banner_text
+      width: 70%
+      .banner_title
+        font-size: 18px
+      .banner_discount
+        span
+          font-size: 12px
+        b
+          font-size: 30px
+      .banner_send
+        font-size: 12px
+        padding: 10px 15px
+
+  .production_categories
+    .category
+      width: 40%
+
+
+  .footer_contacts
+    display: flex
+    .footer_mail_and_feedback
+      margin-left: 170px
+
+  .product_head
+    .product_text
+      padding-right: 25px
+      padding-left: 25px
+@media only screen and (max-width: 768px)
+  header
+    .header_menu_wrapper
+      .nav_menu
+        ul
+          font-size: 12px
+          justify-content: center
+
+  .company_mission
+    .company_mission_image
+      margin-top: 30px
+
+    .company_mission_title
+      font-size: 30px
+
+  .our_advantages
+    .advantage_block
+      border-right: 1px solid #dce6ea
+
+  .home_news_articles
+    margin-top: 30px
+    .home_article
+      .article_image
+        height: 200px
+
+
+  footer
+    .footer_payments
+      .payment_list
+
+        .footer_pay
+          margin: 5px 0
+
+  .footer_contacts
+    .footer_mail_and_feedback
+      margin-left: 80px
+
+
+  .articles_wrapper
+    article
+      flex-direction: column !important
+      padding: 35px !important
+      .article_image
+        width: 100%
+        margin: 0 !important
+      .article_text
+        width: 100%
+        text-align: left !important
+@media only screen and (max-width: 600px)
+  .services_wrapper
+    .service_block
+      flex-direction: column
+      .service_image
+        width: 100%
+        flex-basis: auto
+
+  .banner
+    .banner_text
+      width: 70%
+      .banner_title
+        font-size: 18px
+      .banner_discount
+        span
+          font-size: 12px
+        b
+          font-size: 30px
+      .banner_send
+        font-size: 12px
+        padding: 10px 15px
+
+
+  .production_categories
+    .category
+      width: 100%
+
+  .footer_contacts
+    justify-content: space-between
+    .footer_mail_and_feedback
+      margin-left: 0
+
+  .service_guarantee
+    flex-direction: column
+    padding: 20px
+    img
+      margin: 0
+      margin-bottom: 10px
+
+
+
+  .remodal
+    max-width: 100%
+    width: auto
+    padding: 25px
+
+@media only screen and (max-width: 500px)
+
+
+
+
+  .main_banner_wrapper
+    padding: 0
+    .banner_slider_wrapper
+      padding: 15px 0
+      width: auto
+      height: 255px
+      #main_banner_slider
+        .banner_slide
+          .banner_content
+            .banner_title
+              h5
+                font-size: 20px
+              h1
+                font-size: 30px
+
+  #banner_slider_pag
+    right: 0
+
+
+  .we_offer
+    .offer_block
+      .offer_text
+        h5
+          font-size: 14px
+        p
+          font-size: 12px
+          line-height: 1.5
+
+
+  .footer_contacts
+    .footer_mail_and_feedback
+      .footer_mail
+        font-size: 12px
+        margin-bottom: 7px
+      .footer_feedback
+        font-size: 12px
+        padding: 5px 0
+
+@media only screen and (max-width: 440px)
+  header
+    .header_info_wrapper
+      .header_info_blocks
+        flex-direction: column
+        align-items: flex-start
+      .header_contacts
+        margin-left: 0
+        display: flex
+        justify-content: space-between
+        width: 100%
+        font-size: 12px
+        .header_time
+          margin-right: 10px
+
+    .header_info_wrapper
+      .header_logo_wrapper
+        .header_logo
+          img
+            max-width: 130px
+
+        .header_logo_text
+          font-size: 12px
+          align-items: flex-end
+
+
+  #reviews_slider
+    .review_slide
+      flex-direction: column
+
+      .review_block
+        margin-top: 10px
+        width: 100%
+
+
+  footer
+    .footer_column_title
+      font-size: 12px
+      padding-left: 16px
+      &:before
+        width: 8px
+        height: 8px
+
+    .footer_nav
+      ul
+        li
+          margin-bottom: 5px
+          a
+            font-size: 11px
+    .footer_sales
+      a
+        font-size: 11px
+
+    .footer_contacts
+      .footer_mail_and_feedback
+        .footer_mail
+          font-size: 11px
+      .contacts_icon
+        img
+          max-width: 13px
+          max-height: 13px
+          margin-right: 5px
+      .footer_phones
+        .phone_numbers
+          .number
+            &:nth-child(2)
+              .footer_number
+                font-size: 9px
+
+          .footer_number
+            font-size: 11px
+
+    .footer_payments
+      .payment_list
+        img
+          max-width: 80px
+  .banner
+    .banner_text
+      width: 90%
+
+
+  .product_head
+    .product_text
+      padding-right: 25px
+      padding-left: 25px
+      .product_buttons
+        flex-direction: column
+        .product_button
+          width: 100%
+          margin-bottom: 10px
+        .one_click_button
+          width: 100%
+
+  .product_sizes
+    .size_row
+      .size_name
+        width: 50%
+
+  .product_tech_wrapper
+    .tech_table
+      .tech_row
+        padding: 5px 15px
+        .tech_name, .tech_value
+          font-size: 12px
+        .tech_name
+          width: 60%

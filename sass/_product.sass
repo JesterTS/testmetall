@@ -1,0 +1,188 @@
+.product_head
+  box-shadow: 0 0 21px rgba(186, 183, 183, 0.21)
+  #product_slider
+    border: 1px solid #dce6ea
+    .product_image
+      display: flex
+      align-items: center
+      justify-content: center
+      outline: none
+      padding: 20px
+      height: 300px
+      img
+        max-width: 100%
+        max-height: 100%
+
+  .product_text
+    padding: 25px 0
+    .product_desc
+      color: #666666
+      font-family: Muller
+      font-size: 15px
+      font-weight: 400
+
+    .product_buttons
+      display: flex
+      justify-content: space-around
+      .one_click_button
+        padding: 8px 0
+        color: #14477a
+        border: 2px solid #14477a
+        background: white
+        font-family: MullerBold
+        font-size: 16px
+        width: 48%
+        font-weight: 400
+        transition: .3s
+        &:hover
+          background: #e11d1e
+          border-color: #e11d1e
+          color: white
+    .product_button
+      box-shadow: 0 15px 21px rgba(114, 52, 80, 0.5)
+      background-image: linear-gradient(to right, #164779 0%, #e11d1e 100%)
+      color: #ffffff
+      font-family: MullerBold
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+      padding: 8px 0
+      width: 48%
+      border: none
+
+    .product_price
+      margin-top: 25px
+      p
+        color: #303030
+        font-family: MullerBold
+        font-size: 17px
+        font-weight: 400
+        margin-bottom: 0
+      h1
+        color: #e11d1e
+        font-family: MullerBold
+        font-size: 40px
+        font-weight: 400
+
+    .product_amount
+      display: flex
+      align-items: center
+      margin: 20px 0
+      span
+        color: #666666
+        font-family: Muller
+        font-size: 15px
+        font-weight: 400
+        margin-right: 15px
+      .amount_block
+        display: flex
+
+        .amount_minus, .amount_plus
+          background: white
+          border: 1px solid #dce6ea
+          font-size: 22px
+          line-height: 1
+          color: #434343
+          font-family: MullerBold
+
+        .amount_field
+          border-right: none
+          border-left: none
+          border-top: 1px solid #dce6ea
+          border-bottom: 1px solid #dce6ea
+          max-width: 50px
+          color: #303030
+          font-family: Muller
+          font-size: 15px
+          font-weight: 400
+          text-align: center
+          &:disabled
+            background: white
+
+#product_slider_nav
+  padding: 0 30px
+  background: #f1f6f8
+  .product_nav
+    height: 85px
+    width: 85px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 10px
+    cursor: pointer
+    outline: none
+    border: 1px solid #dce6ea
+    background: white
+    img
+      max-width: 100%
+      max-height: 100%
+  .slick-current
+    border: 1px solid #e11d1e
+    box-shadow: 0 15px 21px rgba(114, 52, 80, 0.5)
+
+  .slick-arrow
+    width: auto
+    height: auto
+    &:before
+      color: #b5c0c5
+      font-family: FontAwesome
+      font-size: 35px
+
+  .slick-prev
+    left: 10px
+    &:before
+      content: '\f104'
+  .slick-next
+    right: 10px
+    &:before
+      content: '\f105'
+
+
+.product_sizes
+  margin-top: 40px
+  .sizes_title
+    color: #303030
+    font-family: MullerBold
+    font-size: 17px
+    font-weight: 400
+
+  .size_row
+    display: flex
+    .size_name
+      width: 40%
+      color: #666666
+      font-family: Muller
+      font-size: 15px
+      font-weight: 400
+    .size_value
+      color: #303030
+      font-family: Muller
+      font-size: 15px
+      font-weight: 400
+
+.product_tech_wrapper
+  padding: 25px
+  .tech_title
+    color: #222222
+    font-family: MullerMedium
+    font-size: 18px
+    font-weight: 400
+
+  .tech_table
+    .tech_row
+      display: flex
+      padding: 10px 35px
+      background-color: #f8fafb
+      .tech_name
+        width: 50%
+        color: #666666
+        font-family: Muller
+        font-size: 15px
+        font-weight: 400
+      .tech_value
+        color: #303030
+        font-family: Muller
+        font-size: 15px
+        font-weight: 400
+      &:nth-child(2n)
+        background: white
